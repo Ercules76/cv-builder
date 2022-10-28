@@ -19,6 +19,7 @@ return new class extends Migration
             $table->id();
             $table->uuid('uuid')->unique();
             $table->text('bio')->nullabe();
+            $table->foreignId('user_id')->index()->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }

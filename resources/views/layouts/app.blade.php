@@ -18,7 +18,7 @@
 
     <body class="antialiased">
         {{ $slot }}
-
+        @livewire('livewire-ui-spotlight')
         @livewire('notifications')
     </body>
 </html>
